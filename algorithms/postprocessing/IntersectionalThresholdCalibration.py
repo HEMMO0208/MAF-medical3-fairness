@@ -58,8 +58,9 @@ MIN_POS = 20
 
 class Intersectional_Threshold_Calibration:
     def __init__(self, dataset_name: str = "compas",
-                 protected_attrs=None, privileged_primary: str = None) -> None:
+                 protected_attrs=None, privileged_primary: str = None, seed: int = 1) -> None:
         self.dataset_name = dataset_name
+        self.seed = seed
         # protected_attrs: the axes whose INTERSECTION defines the subgroups.
         # defaults give a 2-axis intersection per dataset.
         defaults = {"compas": ["sex", "race"],
@@ -81,8 +82,8 @@ class Intersectional_Threshold_Calibration:
         else:
             raise ValueError(f"Unsupported dataset: {self.dataset_name}")
 
-        self.dataset_train, dataset_vt = self.dataset_orig.split([0.6], shuffle=True, seed=1)
-        self.dataset_valid, self.dataset_test = dataset_vt.split([0.5], shuffle=True, seed=1)
+        self.dataset_train, dataset_vt = self.dataset_orig.split([0.6], shuffle=True, seed=self.seed)
+        self.dataset_valid, self.dataset_test = dataset_vt.split([0.5], shuffle=True, seed=self.seed)
 
         self.privileged_groups = [{self.primary: 1}]
         self.unprivileged_groups = [{self.primary: 0}]

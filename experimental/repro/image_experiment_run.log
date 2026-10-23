@@ -1,0 +1,48 @@
+[data] 5000 unique-uid imgs | pos=1110 | M=2772 F=2228
+[seed 1] interDEO 0.171->0.171 | genderDEO 0.006->0.014 | acc 0.811->0.807
+[seed 2] interDEO 0.193->0.233 | genderDEO 0.020->0.041 | acc 0.750->0.759
+[seed 3] interDEO 0.350->0.417 | genderDEO 0.092->0.032 | acc 0.788->0.787
+[seed 4] interDEO 0.202->0.236 | genderDEO 0.088->0.142 | acc 0.776->0.783
+[seed 5] interDEO 0.402->0.361 | genderDEO 0.003->0.014 | acc 0.793->0.783
+
+=== 5 seeds: mean +/- std ===
+accuracy             before 0.7836+/-0.0202   after 0.7838+/-0.0153
+sensitivity          before 0.7623+/-0.0580   after 0.7537+/-0.0527
+gender_DEO           before 0.0419+/-0.0397   after 0.0484+/-0.0478
+intersectional_DEO   before 0.2637+/-0.0936   after 0.2835+/-0.0906
+
+=== per-(sex x age) cell: positives & TPR (seed 1) ===
+{
+  "Fx<50": {
+    "n_pos": 50,
+    "TPR_before": 0.82,
+    "TPR_after": 0.86
+  },
+  "Fx50-64": {
+    "n_pos": 28,
+    "TPR_before": 0.7142857142857143,
+    "TPR_after": 0.7142857142857143
+  },
+  "Fx65+": {
+    "n_pos": 22,
+    "TPR_before": 0.8636363636363636,
+    "TPR_after": 0.8636363636363636
+  },
+  "Mx<50": {
+    "n_pos": 67,
+    "TPR_before": 0.7910447761194029,
+    "TPR_after": 0.8059701492537313
+  },
+  "Mx50-64": {
+    "n_pos": 44,
+    "TPR_before": 0.8636363636363636,
+    "TPR_after": 0.8409090909090909
+  },
+  "Mx65+": {
+    "n_pos": 13,
+    "TPR_before": 0.6923076923076923,
+    "TPR_after": 0.6923076923076923
+  }
+}
+
+[split] written to repro/siim_split_seed1.json | sha256(test)=195b1813dfac7f6b...

@@ -67,7 +67,7 @@ class Subgroup_Balanced_Resampling:
         else:
             raise ValueError(f"Unsupported dataset: {self.dataset_name}")
 
-        self.dataset_train, self.dataset_test = self.dataset_orig.split([0.7], shuffle=True, seed=1)
+        self.dataset_train, self.dataset_test = self.dataset_orig.split([0.7], shuffle=True, seed=self.seed)
         self.privileged_groups = [{self.primary: 1}]
         self.unprivileged_groups = [{self.primary: 0}]
         self.fav = self.dataset_orig.favorable_label

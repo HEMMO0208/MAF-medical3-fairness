@@ -1,10 +1,10 @@
-# core (algorithms ① ②)
+# core — submitted algorithms ① ②
 aif360==0.6.1
 scikit-learn>=1.0
 numpy>=1.21
 pandas>=1.3
 
-# extra for ③ SSLBackbone_IntersectionalCalibration (image pipeline)
-torch>=2.0
-transformers>=4.40
-Pillow>=9
+# experimental/ only (③ image pipeline, not submitted)
+# torch>=2.0
+# transformers>=4.40
+# Pillow>=9
