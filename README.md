@@ -45,11 +45,16 @@ AIF360 기반 MAF2024_guide 양식(`aifData` + Logistic Regression baseline +
 | ① IntersectionalThresholdCalibration | **0.387 ± 0.105 → 0.129 ± 0.057** (5시드 전부 개선) |
 | ② SubgroupBalancedResampling | **0.301 ± 0.067 → 0.108 ± 0.048** (5시드 전부 개선) |
 
-(정확도는 소폭 하락 — 공정성 개선의 통상적 트레이드오프.) 단일 실행 재현:
+(정확도는 소폭 하락 — 공정성 개선의 통상적 트레이드오프.)
+
+### 빠른 실행 (Quick start)
 ```bash
+pip install -r requirements.txt
+python download_data.py                                                  # COMPAS·German 원본을 AIF360 폴더로 자동 다운로드
 python algorithms/postprocessing/IntersectionalThresholdCalibration.py   # ①
 python algorithms/preprocessing/SubgroupBalancedResampling.py            # ②
 ```
+각 스크립트는 보정 전/후 지표를 출력합니다. (깨끗한 clone + 데이터 없는 상태에서 위 순서로 구동 확인)
 
 ---
 
