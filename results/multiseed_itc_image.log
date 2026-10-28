@@ -1,0 +1,48 @@
+[SIIM:raddino] n=12047 | dim=768 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 1] interDEO 0.041->0.061 | EOD +0.004->-0.015 | bal_acc 0.834->0.831
+[SIIM:raddino] n=12047 | dim=768 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 2] interDEO 0.058->0.138 | EOD -0.015->+0.016 | bal_acc 0.823->0.814
+[SIIM:raddino] n=12047 | dim=768 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 3] interDEO 0.132->0.097 | EOD +0.056->+0.078 | bal_acc 0.825->0.819
+[SIIM:raddino] n=12047 | dim=768 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 4] interDEO 0.129->0.132 | EOD +0.043->+0.078 | bal_acc 0.814->0.815
+[SIIM:raddino] n=12047 | dim=768 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 5] interDEO 0.048->0.039 | EOD +0.015->+0.023 | bal_acc 0.824->0.828
+
+=== 5 seeds: mean +/- std ===
+accuracy                         before 0.8013 +/- 0.0096   after 0.7956 +/- 0.0117
+Balanced accuracy                before 0.8238 +/- 0.0064   after 0.8212 +/- 0.0069
+true_positive_rate               before 0.8632 +/- 0.0109   after 0.8659 +/- 0.0067
+equal_opportunity_difference     before 0.0205 +/- 0.0257   after 0.0361 +/- 0.0365
+average_abs_odds_difference      before 0.0192 +/- 0.0093   after 0.0366 +/- 0.0190
+intersectional_DEO               before 0.0817 +/- 0.0405   after 0.0936 +/- 0.0389
+
+=== per-cell positives / TPR (seed 1) ===
+{
+  "sex=0 x age_under65=0": {
+    "n_pos": 53,
+    "TPR_before": 0.8868,
+    "TPR_after": 0.9057,
+    "threshold": 0.09
+  },
+  "sex=0 x age_under65=1": {
+    "n_pos": 238,
+    "TPR_before": 0.8655,
+    "TPR_after": 0.8445,
+    "threshold": 0.13
+  },
+  "sex=1 x age_under65=0": {
+    "n_pos": 52,
+    "TPR_before": 0.8462,
+    "TPR_after": 0.8846,
+    "threshold": 0.08
+  },
+  "sex=1 x age_under65=1": {
+    "n_pos": 319,
+    "TPR_before": 0.8683,
+    "TPR_after": 0.8683,
+    "threshold": 0.1
+  }
+}
+
+saved results/multiseed_itc_image.json

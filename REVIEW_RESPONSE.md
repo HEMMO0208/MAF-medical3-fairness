@@ -61,3 +61,36 @@ AI-DEP 10/23 의료3 제출(KAIST 유창동 연구실) 검증 지적사항에 �
 
 ---
 문의: KAIST 유창동 연구실 · AI-DEP 의료3(ALINPneumothorax).
+
+---
+
+# 추가 보완 (10/28)
+
+## A. 적용 가능 데이터셋 정정 — COMPAS·Adult (German 제외)
+- 기존 표기 "COMPAS·German·Adult" 중 German·Adult는 실행 검증 없이 기재돼 있었고, Adult는 다운로드 스크립트에도 빠져 있었습니다.
+- `download_data.py`에 Adult 추가 후 ①②를 세 데이터셋에서 5시드 실행:
+  - COMPAS: ① 0.387→0.130, ② 0.301→0.108 (5/5 개선)
+  - Adult: ① 0.503→0.089, ② 0.470→0.108 (5/5 개선)
+  - German(1,000건): ① 0.464→0.430, ② 0.421→0.312, 시드별로 악화·무변화 포함 → **적용 대상에서 제외**
+- 결과 파일: `results/multiseed_{itc,sbr}[_adult|_german].*`
+
+## B. 이미지 알고리즘을 가이드 이미지 처리 방식으로 구현
+- 기존 ③은 가이드 22~30쪽 방식(aifData, LR baseline, `common_utils`)을 따르지 않았습니다.
+- `siim_dataset.py`(가이드 `PubFigDataset`과 같은 `download()`/`to_dataset()`)와
+  `algorithms/postprocessing/IntersectionalThresholdCalibration_Image.py`(①의 보정 로직을 그대로 상속)를 추가했습니다.
+- 5시드 결과 (SIIM 12,047장, 성별×65세 4셀):
+  - 픽셀 특징(가이드 예시 그대로): 균형정확도 0.573, intersectional-DEO 0.132→0.158
+  - RAD-DINO 특징(기본값): 균형정확도 0.824, intersectional-DEO 0.082→0.094
+- **이미지에서는 개선이 재현되지 않았습니다.** 좋은 모델 기준 보정 전 격차(0.082)가 우연 수준(격차 0일 때 기대값 0.073,
+  95% 상한 0.136)이라, SIIM에는 보정할 교차집단 편향이 측정되지 않습니다. 이미지 모듈은 ①의 이미지 연동용으로 제공하며
+  별도 알고리즘으로 세지 않습니다. 결과 파일: `results/multiseed_itc_image*.*`
+
+## C. SIIM-ACR 데이터 출처 확정 및 README 본문 기재
+- 영상·마스크: Kaggle `iafoss/siimacr-pneumothorax-segmentation-data-512`
+- 성별·나이: Kaggle `safavieh/siim-acr-pneumothorax-segmentation-metadata` (`train.csv`/`test.csv`). 보유 파일과 바이트 단위 일치 확인.
+- 폴더 구조와 다운로드 방법(`download_data.py --siim`)을 README 본문에 기재했습니다.
+
+## D. 협약 성과지표 재현 코드 추가 — `performance_targets/`
+- 정확도 94 / DEO 5 / 정책반영 하락률 3을 측정한 코드(원 과제 벤치마크, Four-Findings 438장 테스트)를 저장소에 포함했습니다.
+- 같은 레시피를 학습 시드 5개로 실행: **4개 시드에서 세 지표 모두 통과**, 시드 3은 정확도 92.92로 미달
+  (공정성·하락률은 5개 모두 통과). 결과 JSON·로그 동봉.

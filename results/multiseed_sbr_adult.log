@@ -1,0 +1,13 @@
+[seed 1] interDEO 0.468->0.094 | EOD -0.456->-0.003 | bal_acc 0.662->0.709
+[seed 2] interDEO 0.480->0.142 | EOD -0.463->-0.083 | bal_acc 0.660->0.719
+[seed 3] interDEO 0.461->0.109 | EOD -0.442->-0.067 | bal_acc 0.658->0.717
+[seed 4] interDEO 0.464->0.050 | EOD -0.451->+0.005 | bal_acc 0.660->0.720
+[seed 5] interDEO 0.476->0.146 | EOD -0.461->-0.057 | bal_acc 0.662->0.714
+=== 5 seeds: mean +/- std ===
+accuracy                         before 0.8026 +/- 0.0020   after 0.7339 +/- 0.0052
+Balanced accuracy                before 0.6605 +/- 0.0014   after 0.7159 +/- 0.0041
+true_positive_rate               before 0.3850 +/- 0.0052   after 0.6811 +/- 0.0203
+equal_opportunity_difference     before -0.4548 +/- 0.0076   after -0.0407 +/- 0.0355
+average_abs_odds_difference      before 0.2799 +/- 0.0061   after 0.0325 +/- 0.0237
+intersectional_DEO               before 0.4696 +/- 0.0072   after 0.1083 +/- 0.0352
+saved results/multiseed_sbr_adult.json

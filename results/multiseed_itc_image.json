@@ -1,0 +1,277 @@
+{
+  "algo": "itc_image",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "per_seed": [
+    {
+      "seed": 1,
+      "before": {
+        "accuracy": 0.8150730411686588,
+        "Balanced accuracy": 0.8337475091598637,
+        "true_positive_rate": 0.8670694864048338,
+        "equal_opportunity_difference": 0.0041866970480081145,
+        "average_abs_odds_difference": 0.011847446225166092,
+        "intersectional_DEO": 0.04063860667634256
+      },
+      "after": {
+        "accuracy": 0.8124169986719787,
+        "Balanced accuracy": 0.8309603393970559,
+        "true_positive_rate": 0.8640483383685801,
+        "equal_opportunity_difference": -0.014949842998860707,
+        "average_abs_odds_difference": 0.023850000220495562,
+        "intersectional_DEO": 0.06112256223244017
+      }
+    },
+    {
+      "seed": 2,
+      "before": {
+        "accuracy": 0.7878486055776892,
+        "Balanced accuracy": 0.8225387334179134,
+        "true_positive_rate": 0.8811074918566775,
+        "equal_opportunity_difference": -0.015426003223981355,
+        "average_abs_odds_difference": 0.01773124015929703,
+        "intersectional_DEO": 0.05797101449275355
+      },
+      "after": {
+        "accuracy": 0.7775564409030544,
+        "Balanced accuracy": 0.8136517130181775,
+        "true_positive_rate": 0.8745928338762216,
+        "equal_opportunity_difference": 0.01632273974357601,
+        "average_abs_odds_difference": 0.018010395619459843,
+        "intersectional_DEO": 0.13848631239935594
+      }
+    },
+    {
+      "seed": 3,
+      "before": {
+        "accuracy": 0.8074369189907038,
+        "Balanced accuracy": 0.8247736227275869,
+        "true_positive_rate": 0.8558558558558559,
+        "equal_opportunity_difference": 0.05555555555555547,
+        "average_abs_odds_difference": 0.035191287444614805,
+        "intersectional_DEO": 0.13227541689080147
+      },
+      "after": {
+        "accuracy": 0.797144754316069,
+        "Balanced accuracy": 0.818704254126249,
+        "true_positive_rate": 0.8573573573573574,
+        "equal_opportunity_difference": 0.07794612794612787,
+        "average_abs_odds_difference": 0.0529100796658141,
+        "intersectional_DEO": 0.09675244254850701
+      }
+    },
+    {
+      "seed": 4,
+      "before": {
+        "accuracy": 0.7941567065073041,
+        "Balanced accuracy": 0.8137657970246028,
+        "true_positive_rate": 0.848714069591528,
+        "equal_opportunity_difference": 0.04291704271961494,
+        "average_abs_odds_difference": 0.0224175147162404,
+        "intersectional_DEO": 0.12944934590812285
+      },
+      "after": {
+        "accuracy": 0.7895086321381142,
+        "Balanced accuracy": 0.8151383741813925,
+        "true_positive_rate": 0.8608169440242057,
+        "equal_opportunity_difference": 0.07801218411552346,
+        "average_abs_odds_difference": 0.06556648307579928,
+        "intersectional_DEO": 0.1323395193185275
+      }
+    },
+    {
+      "seed": 5,
+      "before": {
+        "accuracy": 0.8017928286852589,
+        "Balanced accuracy": 0.8243427249442288,
+        "true_positive_rate": 0.8634222919937206,
+        "equal_opportunity_difference": 0.015316636284378182,
+        "average_abs_odds_difference": 0.008578881562752508,
+        "intersectional_DEO": 0.048319952423431456
+      },
+      "after": {
+        "accuracy": 0.8014608233731739,
+        "Balanced accuracy": 0.82757861687185,
+        "true_positive_rate": 0.8728414442700158,
+        "equal_opportunity_difference": 0.022965047158595486,
+        "average_abs_odds_difference": 0.0224363345331087,
+        "intersectional_DEO": 0.039103039288361785
+      }
+    }
+  ],
+  "per_cell_seed": {
+    "1": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 53,
+        "TPR_before": 0.8868,
+        "TPR_after": 0.9057,
+        "threshold": 0.09
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 238,
+        "TPR_before": 0.8655,
+        "TPR_after": 0.8445,
+        "threshold": 0.13
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 52,
+        "TPR_before": 0.8462,
+        "TPR_after": 0.8846,
+        "threshold": 0.08
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 319,
+        "TPR_before": 0.8683,
+        "TPR_after": 0.8683,
+        "threshold": 0.1
+      }
+    },
+    "2": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 54,
+        "TPR_before": 0.8333,
+        "TPR_after": 0.7963,
+        "threshold": 0.1
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 229,
+        "TPR_before": 0.8821,
+        "TPR_after": 0.9039,
+        "threshold": 0.05
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 46,
+        "TPR_before": 0.8913,
+        "TPR_after": 0.9348,
+        "threshold": 0.06
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 285,
+        "TPR_before": 0.8877,
+        "TPR_after": 0.8561,
+        "threshold": 0.1
+      }
+    },
+    "3": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 55,
+        "TPR_before": 0.9636,
+        "TPR_after": 0.8545,
+        "threshold": 0.22
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 215,
+        "TPR_before": 0.8698,
+        "TPR_after": 0.9163,
+        "threshold": 0.07
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 58,
+        "TPR_before": 0.8448,
+        "TPR_after": 0.8621,
+        "threshold": 0.11
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 338,
+        "TPR_before": 0.8314,
+        "TPR_after": 0.8195,
+        "threshold": 0.15
+      }
+    },
+    "4": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 60,
+        "TPR_before": 0.9167,
+        "TPR_after": 0.9167,
+        "threshold": 0.09
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 217,
+        "TPR_before": 0.8618,
+        "TPR_after": 0.9032,
+        "threshold": 0.06
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 38,
+        "TPR_before": 0.9474,
+        "TPR_after": 0.9474,
+        "threshold": 0.21
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 346,
+        "TPR_before": 0.8179,
+        "TPR_after": 0.815,
+        "threshold": 0.11
+      }
+    },
+    "5": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 60,
+        "TPR_before": 0.8667,
+        "TPR_after": 0.8833,
+        "threshold": 0.09
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 236,
+        "TPR_before": 0.8729,
+        "TPR_after": 0.8856,
+        "threshold": 0.08
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 57,
+        "TPR_before": 0.8246,
+        "TPR_after": 0.8947,
+        "threshold": 0.04
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 284,
+        "TPR_before": 0.8627,
+        "TPR_after": 0.8556,
+        "threshold": 0.13
+      }
+    }
+  },
+  "summary": {
+    "accuracy": {
+      "before_mean": 0.801261620185923,
+      "before_std": 0.00958708095951804,
+      "after_mean": 0.795617529880478,
+      "after_std": 0.01168092643305422
+    },
+    "Balanced accuracy": {
+      "before_mean": 0.823833677454839,
+      "before_std": 0.006363423323244657,
+      "after_mean": 0.8212066595189451,
+      "after_std": 0.00686876186788731
+    },
+    "true_positive_rate": {
+      "before_mean": 0.8632338391405231,
+      "before_std": 0.010949643929704206,
+      "after_mean": 0.8659313835792762,
+      "after_std": 0.006722900220564112
+    },
+    "equal_opportunity_difference": {
+      "before_mean": 0.02050998567671507,
+      "before_std": 0.02574911299945841,
+      "after_mean": 0.03605925119299243,
+      "after_std": 0.03654442441384309
+    },
+    "average_abs_odds_difference": {
+      "before_mean": 0.019153274021614167,
+      "before_std": 0.009328324799660042,
+      "after_mean": 0.03655465862293549,
+      "after_std": 0.019046316526529574
+    },
+    "intersectional_DEO": {
+      "before_mean": 0.08173086727829038,
+      "before_std": 0.040499872630626335,
+      "after_mean": 0.09356077515743848,
+      "after_std": 0.03885914124031813
+    }
+  }
+}

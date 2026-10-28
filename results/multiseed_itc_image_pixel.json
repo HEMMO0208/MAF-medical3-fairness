@@ -1,0 +1,277 @@
+{
+  "algo": "itc_image",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "per_seed": [
+    {
+      "seed": 1,
+      "before": {
+        "accuracy": 0.6141078838174274,
+        "Balanced accuracy": 0.5968813079241126,
+        "true_positive_rate": 0.5656192236598891,
+        "equal_opportunity_difference": -0.0036537927202000553,
+        "average_abs_odds_difference": 0.005001763036450391,
+        "intersectional_DEO": 0.12896405919661735
+      },
+      "after": {
+        "accuracy": 0.612448132780083,
+        "Balanced accuracy": 0.5977812920013174,
+        "true_positive_rate": 0.5711645101663586,
+        "equal_opportunity_difference": -0.04355376493470409,
+        "average_abs_odds_difference": 0.040378211899541994,
+        "intersectional_DEO": 0.14207188160676543
+      }
+    },
+    {
+      "seed": 2,
+      "before": {
+        "accuracy": 0.6215767634854772,
+        "Balanced accuracy": 0.5710668608156111,
+        "true_positive_rate": 0.48336594911937375,
+        "equal_opportunity_difference": -0.029204992412276642,
+        "average_abs_odds_difference": 0.0244381485554023,
+        "intersectional_DEO": 0.09323308270676689
+      },
+      "after": {
+        "accuracy": 0.6149377593360996,
+        "Balanced accuracy": 0.5718603570320768,
+        "true_positive_rate": 0.49706457925636005,
+        "equal_opportunity_difference": 0.001362693177243024,
+        "average_abs_odds_difference": 0.016521233662628393,
+        "intersectional_DEO": 0.20526315789473681
+      }
+    },
+    {
+      "seed": 3,
+      "before": {
+        "accuracy": 0.5609958506224066,
+        "Balanced accuracy": 0.564277070299918,
+        "true_positive_rate": 0.5700575815738963,
+        "equal_opportunity_difference": -0.006777798131525903,
+        "average_abs_odds_difference": 0.008562406359411606,
+        "intersectional_DEO": 0.08906882591093124
+      },
+      "after": {
+        "accuracy": 0.5514522821576764,
+        "Balanced accuracy": 0.5658342215615407,
+        "true_positive_rate": 0.5911708253358925,
+        "equal_opportunity_difference": -0.02647004945960796,
+        "average_abs_odds_difference": 0.01631840336530277,
+        "intersectional_DEO": 0.10199430199430204
+      }
+    },
+    {
+      "seed": 4,
+      "before": {
+        "accuracy": 0.6240663900414938,
+        "Balanced accuracy": 0.5736299281385943,
+        "true_positive_rate": 0.48237476808905383,
+        "equal_opportunity_difference": 0.00014102781068425774,
+        "average_abs_odds_difference": 0.010326622738342367,
+        "intersectional_DEO": 0.10001702417432762
+      },
+      "after": {
+        "accuracy": 0.6232365145228216,
+        "Balanced accuracy": 0.5737558616080415,
+        "true_positive_rate": 0.4842300556586271,
+        "equal_opportunity_difference": -0.010675805268799021,
+        "average_abs_odds_difference": 0.03107786607705912,
+        "intersectional_DEO": 0.13438735177865607
+      }
+    },
+    {
+      "seed": 5,
+      "before": {
+        "accuracy": 0.6485477178423237,
+        "Balanced accuracy": 0.557325849862359,
+        "true_positive_rate": 0.39543726235741444,
+        "equal_opportunity_difference": -0.012570965125709654,
+        "average_abs_odds_difference": 0.0176660713107685,
+        "intersectional_DEO": 0.2465277777777778
+      },
+      "after": {
+        "accuracy": 0.6443983402489627,
+        "Balanced accuracy": 0.5567274547318625,
+        "true_positive_rate": 0.4011406844106464,
+        "equal_opportunity_difference": 0.022187463793303164,
+        "average_abs_odds_difference": 0.02442230840558937,
+        "intersectional_DEO": 0.20483091787439614
+      }
+    }
+  ],
+  "per_cell_seed": {
+    "1": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 55,
+        "TPR_before": 0.5455,
+        "TPR_after": 0.5091,
+        "threshold": 0.14
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 181,
+        "TPR_before": 0.5691,
+        "TPR_after": 0.558,
+        "threshold": 0.07
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 43,
+        "TPR_before": 0.6744,
+        "TPR_after": 0.6512,
+        "threshold": 0.07
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 262,
+        "TPR_before": 0.5496,
+        "TPR_after": 0.5802,
+        "threshold": 0.04
+      }
+    },
+    "2": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 38,
+        "TPR_before": 0.4211,
+        "TPR_after": 0.6053,
+        "threshold": 0.01
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 191,
+        "TPR_before": 0.4764,
+        "TPR_after": 0.4764,
+        "threshold": 0.11
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 35,
+        "TPR_before": 0.5143,
+        "TPR_after": 0.4,
+        "threshold": 0.2
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 247,
+        "TPR_before": 0.4939,
+        "TPR_after": 0.5101,
+        "threshold": 0.08
+      }
+    },
+    "3": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 38,
+        "TPR_before": 0.5263,
+        "TPR_after": 0.5263,
+        "threshold": 0.04
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 174,
+        "TPR_before": 0.5747,
+        "TPR_after": 0.5862,
+        "threshold": 0.02
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 39,
+        "TPR_before": 0.6154,
+        "TPR_after": 0.5128,
+        "threshold": 0.08
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 270,
+        "TPR_before": 0.5667,
+        "TPR_after": 0.6148,
+        "threshold": 0.02
+      }
+    },
+    "4": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 46,
+        "TPR_before": 0.4783,
+        "TPR_after": 0.5435,
+        "threshold": 0.08
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 182,
+        "TPR_before": 0.4835,
+        "TPR_after": 0.4615,
+        "threshold": 0.17
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 44,
+        "TPR_before": 0.5682,
+        "TPR_after": 0.4091,
+        "threshold": 0.3
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 267,
+        "TPR_before": 0.4682,
+        "TPR_after": 0.5019,
+        "threshold": 0.09
+      }
+    },
+    "5": {
+      "sex=0 x age_under65=0": {
+        "n_pos": 45,
+        "TPR_before": 0.2222,
+        "TPR_after": 0.2444,
+        "threshold": 0.2
+      },
+      "sex=0 x age_under65=1": {
+        "n_pos": 207,
+        "TPR_before": 0.4251,
+        "TPR_after": 0.4493,
+        "threshold": 0.14
+      },
+      "sex=1 x age_under65=0": {
+        "n_pos": 32,
+        "TPR_before": 0.4688,
+        "TPR_after": 0.3125,
+        "threshold": 0.66
+      },
+      "sex=1 x age_under65=1": {
+        "n_pos": 242,
+        "TPR_before": 0.3926,
+        "TPR_after": 0.4008,
+        "threshold": 0.22
+      }
+    }
+  },
+  "summary": {
+    "accuracy": {
+      "before_mean": 0.6138589211618257,
+      "before_std": 0.028850082618469382,
+      "after_mean": 0.6092946058091286,
+      "after_std": 0.031029577211712678
+    },
+    "Balanced accuracy": {
+      "before_mean": 0.5726362034081189,
+      "before_std": 0.013383254088754801,
+      "after_mean": 0.5731918373869678,
+      "after_std": 0.013652418454888373
+    },
+    "true_positive_rate": {
+      "before_mean": 0.4993709569599255,
+      "before_std": 0.06439359490804102,
+      "after_mean": 0.508954130965577,
+      "after_std": 0.06783228834584554
+    },
+    "equal_opportunity_difference": {
+      "before_mean": -0.0104133041158056,
+      "before_std": 0.010277011925155724,
+      "after_mean": -0.011429892538512976,
+      "after_std": 0.022594225109897167
+    },
+    "average_abs_odds_difference": {
+      "before_mean": 0.013199002400075033,
+      "before_std": 0.006974473914263073,
+      "after_mean": 0.02574360468202433,
+      "after_std": 0.009146129716681514
+    },
+    "intersectional_DEO": {
+      "before_mean": 0.13156215395328416,
+      "before_std": 0.05915021656972428,
+      "after_mean": 0.1577095222297713,
+      "after_std": 0.040925345196211965
+    }
+  }
+}

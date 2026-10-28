@@ -1,0 +1,48 @@
+[SIIM] n=12047 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 1] interDEO 0.129->0.142 | EOD -0.004->-0.044 | bal_acc 0.597->0.598
+[SIIM] n=12047 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 2] interDEO 0.093->0.205 | EOD -0.029->+0.001 | bal_acc 0.571->0.572
+[SIIM] n=12047 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 3] interDEO 0.089->0.102 | EOD -0.007->-0.026 | bal_acc 0.564->0.566
+[SIIM] n=12047 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 4] interDEO 0.100->0.134 | EOD +0.000->-0.011 | bal_acc 0.574->0.574
+[SIIM] n=12047 | pos=2669 | M=6626 F=5421 | age<65=10264 age>=65=1783
+[seed 5] interDEO 0.247->0.205 | EOD -0.013->+0.022 | bal_acc 0.557->0.557
+
+=== 5 seeds: mean +/- std ===
+accuracy                         before 0.6139 +/- 0.0289   after 0.6093 +/- 0.0310
+Balanced accuracy                before 0.5726 +/- 0.0134   after 0.5732 +/- 0.0137
+true_positive_rate               before 0.4994 +/- 0.0644   after 0.5090 +/- 0.0678
+equal_opportunity_difference     before -0.0104 +/- 0.0103   after -0.0114 +/- 0.0226
+average_abs_odds_difference      before 0.0132 +/- 0.0070   after 0.0257 +/- 0.0091
+intersectional_DEO               before 0.1316 +/- 0.0592   after 0.1577 +/- 0.0409
+
+=== per-cell positives / TPR (seed 1) ===
+{
+  "sex=0 x age_under65=0": {
+    "n_pos": 55,
+    "TPR_before": 0.5455,
+    "TPR_after": 0.5091,
+    "threshold": 0.14
+  },
+  "sex=0 x age_under65=1": {
+    "n_pos": 181,
+    "TPR_before": 0.5691,
+    "TPR_after": 0.558,
+    "threshold": 0.07
+  },
+  "sex=1 x age_under65=0": {
+    "n_pos": 43,
+    "TPR_before": 0.6744,
+    "TPR_after": 0.6512,
+    "threshold": 0.07
+  },
+  "sex=1 x age_under65=1": {
+    "n_pos": 262,
+    "TPR_before": 0.5496,
+    "TPR_after": 0.5802,
+    "threshold": 0.04
+  }
+}
+
+saved results/multiseed_itc_image.json

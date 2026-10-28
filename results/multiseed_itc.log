@@ -1,0 +1,15 @@
+[seed 1] interDEO 0.414->0.186 | EOD -0.184->+0.064 | bal_acc 0.672->0.632
+[seed 2] interDEO 0.408->0.069 | EOD -0.262->-0.026 | bal_acc 0.670->0.659
+[seed 3] interDEO 0.555->0.173 | EOD -0.377->+0.068 | bal_acc 0.627->0.626
+[seed 4] interDEO 0.244->0.168 | EOD -0.109->+0.085 | bal_acc 0.682->0.648
+[seed 5] interDEO 0.314->0.051 | EOD -0.178->-0.037 | bal_acc 0.655->0.646
+
+=== 5 seeds: mean +/- std ===
+accuracy                         before 0.6619 +/- 0.0209   after 0.6443 +/- 0.0151
+Balanced accuracy                before 0.6613 +/- 0.0193   after 0.6420 +/- 0.0121
+true_positive_rate               before 0.6769 +/- 0.0858   after 0.7015 +/- 0.0943
+equal_opportunity_difference     before -0.2222 +/- 0.0914   after 0.0307 +/- 0.0517
+average_abs_odds_difference      before 0.2582 +/- 0.0801   after 0.0600 +/- 0.0273
+intersectional_DEO               before 0.3871 +/- 0.1051   after 0.1295 +/- 0.0573
+
+saved results/multiseed_itc.json

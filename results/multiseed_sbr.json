@@ -1,0 +1,146 @@
+{
+  "algo": "sbr",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "per_seed": [
+    {
+      "seed": 1,
+      "before": {
+        "accuracy": 0.6534090909090909,
+        "Balanced accuracy": 0.6548064918851435,
+        "true_positive_rate": 0.7777777777777778,
+        "equal_opportunity_difference": -0.1262820289955846,
+        "average_abs_odds_difference": 0.18727921165770173,
+        "intersectional_DEO": 0.2564102564102565
+      },
+      "after": {
+        "accuracy": 0.6414141414141414,
+        "Balanced accuracy": 0.6417409272891644,
+        "true_positive_rate": 0.6704980842911877,
+        "equal_opportunity_difference": -0.1060477001703578,
+        "average_abs_odds_difference": 0.1265214833430509,
+        "intersectional_DEO": 0.17177115450496738
+      }
+    },
+    {
+      "seed": 2,
+      "before": {
+        "accuracy": 0.672979797979798,
+        "Balanced accuracy": 0.6690377395771587,
+        "true_positive_rate": 0.7142857142857143,
+        "equal_opportunity_difference": -0.24984192722329357,
+        "average_abs_odds_difference": 0.24810390282534184,
+        "intersectional_DEO": 0.43426086956521737
+      },
+      "after": {
+        "accuracy": 0.6470959595959596,
+        "Balanced accuracy": 0.6482209724290485,
+        "true_positive_rate": 0.6353077816492451,
+        "equal_opportunity_difference": -0.031045493345136066,
+        "average_abs_odds_difference": 0.02754218668417402,
+        "intersectional_DEO": 0.08075576305806831
+      }
+    },
+    {
+      "seed": 3,
+      "before": {
+        "accuracy": 0.6654040404040404,
+        "Balanced accuracy": 0.6619762845849803,
+        "true_positive_rate": 0.7442424242424243,
+        "equal_opportunity_difference": -0.13051568314726214,
+        "average_abs_odds_difference": 0.20190839220484247,
+        "intersectional_DEO": 0.27259517582098225
+      },
+      "after": {
+        "accuracy": 0.6464646464646465,
+        "Balanced accuracy": 0.6460079051383399,
+        "true_positive_rate": 0.656969696969697,
+        "equal_opportunity_difference": -0.08585858585858586,
+        "average_abs_odds_difference": 0.09262040224973345,
+        "intersectional_DEO": 0.15918367346938778
+      }
+    },
+    {
+      "seed": 4,
+      "before": {
+        "accuracy": 0.6786616161616161,
+        "Balanced accuracy": 0.6728540696967175,
+        "true_positive_rate": 0.7648456057007126,
+        "equal_opportunity_difference": -0.14422665933931733,
+        "average_abs_odds_difference": 0.17527433536632206,
+        "intersectional_DEO": 0.2785714285714286
+      },
+      "after": {
+        "accuracy": 0.6578282828282829,
+        "Balanced accuracy": 0.6580596833364278,
+        "true_positive_rate": 0.6543942992874109,
+        "equal_opportunity_difference": 0.005174940465286659,
+        "average_abs_odds_difference": 0.016086706394320055,
+        "intersectional_DEO": 0.05412587412587422
+      }
+    },
+    {
+      "seed": 5,
+      "before": {
+        "accuracy": 0.6628787878787878,
+        "Balanced accuracy": 0.6581693755346449,
+        "true_positive_rate": 0.7449101796407186,
+        "equal_opportunity_difference": -0.1272039139665836,
+        "average_abs_odds_difference": 0.18144020136267347,
+        "intersectional_DEO": 0.26208539167254763
+      },
+      "after": {
+        "accuracy": 0.6527777777777778,
+        "Balanced accuracy": 0.6518887458727405,
+        "true_positive_rate": 0.6682634730538922,
+        "equal_opportunity_difference": -0.029993230560940276,
+        "average_abs_odds_difference": 0.04512769588967264,
+        "intersectional_DEO": 0.07418636906105858
+      }
+    }
+  ],
+  "per_cell_seed": {},
+  "summary": {
+    "accuracy": {
+      "before_mean": 0.6666666666666666,
+      "before_std": 0.008665333301400742,
+      "after_mean": 0.6491161616161616,
+      "after_std": 0.005652280122626116
+    },
+    "Balanced accuracy": {
+      "before_mean": 0.663368792255729,
+      "before_std": 0.006699155937196582,
+      "after_mean": 0.6491836468131443,
+      "after_std": 0.005522820590104407
+    },
+    "true_positive_rate": {
+      "before_mean": 0.7492123403294695,
+      "before_std": 0.021556720817811532,
+      "after_mean": 0.6570866670502865,
+      "after_std": 0.01254088896636758
+    },
+    "equal_opportunity_difference": {
+      "before_mean": -0.15561404253440825,
+      "before_std": 0.04755207002094044,
+      "after_mean": -0.04955401389394667,
+      "after_std": 0.04057094171299168
+    },
+    "average_abs_odds_difference": {
+      "before_mean": 0.1988012086833763,
+      "before_std": 0.026184289174305053,
+      "after_mean": 0.06157969491219021,
+      "after_std": 0.04166483802707012
+    },
+    "intersectional_DEO": {
+      "before_mean": 0.30078462440808645,
+      "before_std": 0.06718734144419684,
+      "after_mean": 0.10800456684387125,
+      "after_std": 0.047905239786397526
+    }
+  }
+}
