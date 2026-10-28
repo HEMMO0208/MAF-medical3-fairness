@@ -11,10 +11,6 @@ Algorithm ① applied to chest X-rays, following the MAF guideline's image pipel
      feature='pixel'            : 64x64 grayscale pixels flattened (the guide's literal example)
   2. split with aifData.split(..., shuffle=True, seed=1)  (default 50/25/25)
   3. baseline_fit(): LogisticRegression on those features
-
-Result (5 seeds, see README): the fairness improvement does NOT reproduce on SIIM-ACR —
-with a good baseline the intersectional gap before calibration is already at chance
-level, so there is nothing measurable to correct. Provided as ①'s image adapter.
   4. fairness: per-(sex x age) equal-opportunity thresholds fit on validation,
      applied to test -> transformed test predictions as an aifData
   5. compute_metrics(): metrics.common_utils.compute_metrics (AIF360), plus
@@ -23,6 +19,10 @@ level, so there is nothing measurable to correct. Provided as ①'s image adapte
 
 The calibration logic is inherited unchanged from the tabular algorithm
 (IntersectionalThresholdCalibration.py); only data loading differs.
+
+Result (5 seeds, see README): the fairness improvement does NOT reproduce on SIIM-ACR —
+with a good baseline the intersectional gap before calibration is already at chance
+level, so there is nothing measurable to correct. Provided as ①'s image adapter.
 
 Run
 ---

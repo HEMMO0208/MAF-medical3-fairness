@@ -69,7 +69,7 @@ AI-DEP 10/23 의료3 제출(KAIST 유창동 연구실) 검증 지적사항에 �
 ## A. 적용 가능 데이터셋 정정 — COMPAS·Adult (German 제외)
 - 기존 표기 "COMPAS·German·Adult" 중 German·Adult는 실행 검증 없이 기재돼 있었고, Adult는 다운로드 스크립트에도 빠져 있었습니다.
 - `download_data.py`에 Adult 추가 후 ①②를 세 데이터셋에서 5시드 실행:
-  - COMPAS: ① 0.387→0.130, ② 0.301→0.108 (5/5 개선)
+  - COMPAS: ① 0.387→0.129, ② 0.301→0.108 (5/5 개선)
   - Adult: ① 0.503→0.089, ② 0.470→0.108 (5/5 개선)
   - German(1,000건): ① 0.464→0.430, ② 0.421→0.312, 시드별로 악화·무변화 포함 → **적용 대상에서 제외**
 - 결과 파일: `results/multiseed_{itc,sbr}[_adult|_german].*`
